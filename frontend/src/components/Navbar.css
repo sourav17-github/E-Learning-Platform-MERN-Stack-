@@ -1,0 +1,61 @@
+.container {
+    max-width: 140rem;
+    padding: 4.2rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul {
+    display: flex;
+    gap: 3.2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color:#646cff;
+    
+  }
+  
+  li {
+    list-style: none;
+   
+  }
+  
+  .logo-brand a {
+    color: #646cff;
+    text-decoration: none;
+    margin-left: 0;
+    font-size: 3.5rem;
+    transition: color 0.3s ease, box-shadow 0.3s ease; /* Transition for color and shadow */
+  }
+  
+  .logo-brand a:hover {
+    color:white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+  }
+  
+  nav a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative; /* Add transition to the nav links */
+  }
+  
+  nav a:hover {
+    color:white; /* Change color on hover */
+
+  }
+  nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position the line just below the text */
+    width: 0;
+    height: 2px;
+    background-color:#646cff; /* Line color */
+    transition: width 0.3s ease; /* Smooth transition for the line */
+  }
+  nav a:hover::after {
+    width: 100%; /* Expand the line to full width on hover */
+  }
+  /* Navbar.css */
+
